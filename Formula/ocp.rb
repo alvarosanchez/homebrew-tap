@@ -3,7 +3,7 @@ class Ocp < Formula
   homepage "https://github.com/alvarosanchez/ocp"
   version "0.3.0"
   license "Apache-2.0"
-  depends_on "git"
+  uses_from_macos "git"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{version}/ocp-#{version}-macos-aarch64"
