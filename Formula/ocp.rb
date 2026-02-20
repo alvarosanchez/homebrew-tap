@@ -1,18 +1,18 @@
 class Ocp < Formula
   desc "OpenCode configuration profiles CLI"
   homepage "https://github.com/alvarosanchez/ocp"
-  version "0.6.0"
+  version "0.6.1"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{version}/ocp-#{version}-macos-aarch64"
-    sha256 "710b28b35616cd2565e7fe5eee37aec8b230d61d3fa40c4491b39fd59d39c259"
+    sha256 "72558426581c34f0944b4318d7006568425dc721124a37bf2e010d7351158d15"
   elsif OS.mac?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{version}/ocp-#{version}-macos-x86_64"
-    sha256 "58ff94b5dbadcf247227fa72c4c59e0b9b892fafdeb5bc3dae733d3a432d1d6f"
+    sha256 "f767533804e516ae59d86a6c2fe81a7a0b516dbfc8cad601bed2854fe13eb177"
   else
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{version}/ocp-#{version}-linux-x86_64"
-    sha256 "7590b813d7187b7ad5a24f11edeb6dc761505d498018fed21803b2cb939ebe5f"
+    sha256 "876c0dbf26a8f2d7e6827f43850615850d961b9938e6d70b266ccb331f08e092"
   end
 
   def install
