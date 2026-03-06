@@ -4,6 +4,8 @@ class Ocp < Formula
   version "0.6.2"
   license "Apache-2.0"
 
+  depends_on "bat"
+
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{version}/ocp-#{version}-macos-aarch64"
     sha256 "d2350b38f55cd0537a4fe67831839646ea4783b33c4b561e99c9f877377400d4"
