@@ -3,7 +3,6 @@ class Ocp < Formula
   homepage "https://github.com/alvarosanchez/ocp"
   version "0.6.2"
   license "Apache-2.0"
-  revision 1
 
   depends_on "bat"
 
