@@ -5,7 +5,7 @@ class Ocp < Formula
 
   depends_on "bat"
 
-  OCP_VERSION = "1.0.0-RC1"
+  OCP_VERSION = "1.0.0-RC1".freeze
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{OCP_VERSION}/ocp-#{OCP_VERSION}-macos-aarch64"
