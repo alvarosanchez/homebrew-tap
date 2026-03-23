@@ -5,17 +5,17 @@ class Ocp < Formula
 
   depends_on "bat"
 
-  OCP_VERSION = "1.0.0-RC1".freeze
+  OCP_VERSION = "1.0.0-RC2".freeze
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{OCP_VERSION}/ocp-#{OCP_VERSION}-macos-aarch64"
-    sha256 "84c20b518af9ef8c960c2cbbe5ccc174c879d3b7858e79f7c2f56b3c1967f26e"
+    sha256 "d58a629f4b0d03595eeb38d5a2daf0aa6420829c78e91bebf2a0433eaea931aa"
   elsif OS.mac?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{OCP_VERSION}/ocp-#{OCP_VERSION}-macos-x86_64"
-    sha256 "d17269830032c07c51bcf37b0197fd8420ffd3b920786aa6474cb57f67a4d397"
+    sha256 "29ce16614b8b138881b694324b249264e1922bd8eda2760fecb4d65b13f477da"
   else
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{OCP_VERSION}/ocp-#{OCP_VERSION}-linux-x86_64"
-    sha256 "4d4592aab925bc9c785c5aabb1c3e1abc5b628380d25e21c93f41643ce339a86"
+    sha256 "8f646b4cd28effe0201ff41a89c47cb94f58c7e69f742f5c123ec956f76523e2"
   end
 
   def install
