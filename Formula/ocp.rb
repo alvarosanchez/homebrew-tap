@@ -4,6 +4,7 @@ class Ocp < Formula
   OCP_VERSION = "1.0.0".freeze
   version OCP_VERSION
   license "Apache-2.0"
+  version_scheme 1
 
   depends_on "bat"
 
