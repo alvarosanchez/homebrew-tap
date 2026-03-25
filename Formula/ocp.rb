@@ -1,12 +1,11 @@
 class Ocp < Formula
   desc "OpenCode configuration profiles CLI"
   homepage "https://github.com/alvarosanchez/ocp"
+  OCP_VERSION = "1.0.0".freeze
+  version OCP_VERSION
   license "Apache-2.0"
 
   depends_on "bat"
-
-  OCP_VERSION = "1.0.0".freeze
-  version OCP_VERSION
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/alvarosanchez/ocp/releases/download/v#{OCP_VERSION}/ocp-#{OCP_VERSION}-macos-aarch64"
